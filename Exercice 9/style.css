@@ -66,7 +66,7 @@ body {
 }
 
 .sec3 {
-    height: 380px;
+    height: 400px;
     width: 80%;
     margin: 0px 10% 0px 10%;
 }
@@ -208,7 +208,7 @@ body {
     height: 30px;
     border-radius: 15px;
     background: #8D8D8D;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .imagemap {
@@ -243,11 +243,11 @@ body {
     float: left;
     height: 50px;
     width: 200px;
-    margin: -50px 0px 0px 35px;
+    margin: -50px 0px 0px 45px;
 }
 
 .adresse2 p {
-    margin-top: 7px;
+    margin-top: 10px;
     height: 25px;
 }
 
