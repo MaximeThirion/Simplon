@@ -56,7 +56,7 @@ body {
     background-image: url("http://123hdwallpaperpic.com/download/20150524/blur-1920x1080.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 450px;
 }
 
 .sec2 {
@@ -101,18 +101,19 @@ body {
 }
 
 .sec1 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 2px 0px 2px 5px;
 }
 
 .bouton1 {
     margin-top: 50px;
-    height: 50px;
-    width: 200px;
+    height: 70px;
+    width: 300px;
     color: white;
     background-color: #5FAB17;
     border: solid #5FAB17 1px;
     border-radius: 5px;
+    font-size: 1.6em;
 }
 
 .blocsec1 {
