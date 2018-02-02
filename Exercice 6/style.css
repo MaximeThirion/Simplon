@@ -1,0 +1,98 @@
+#vert {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    box-shadow:inset 0px 0px 0px 1.5px green;
+    background-color: #649750;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#bleu {
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+    box-shadow:inset 0px 0px 0px 1.5px #202b80;
+    background-color: #5b8497;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#clear1 {
+    clear: both;
+    height: 90px;
+}
+
+.test1 {
+    left: 0px;
+}
+
+.test2 {
+    left: 40px;
+}
+
+.test3 {
+    left: 80px;
+}
+
+.test4 {
+    top: 45px;
+    left: -5px;
+}
+
+.test5 {
+    top: 90px;
+    left: -10px;
+}
+
+.test6 {
+    top: 45px;
+    left: -15px;
+}
+
+.test7 {
+    left: -20px;
+}
+
+.test8 {
+    left: 323px;
+}
+
+.test9 {
+    left: 283px;
+}
+
+.test10 {
+    left: 243px;
+}
+
+.test11 {
+    left: 318px;
+    bottom: 45px;
+}
+
+.test12 {
+    left: 313px;
+    bottom: 90px;
+}
+
+.test13 {
+    left: 308px;
+    bottom: 45px;
+}
+
+.test14 {
+    left: 303px;
+}
+
+.abso1 {
+    left: 412px;
+    top: 1000px;
+}
+
+.abso2 {
+    left: 574px;
+    top: 1000px;
+}

@@ -1,0 +1,54 @@
+.vert {
+    display: inline-block;
+    box-shadow:inset 0px 0px 0px 1.5px green;
+    background-color: #649750;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.bleu {
+    display: block;
+    box-shadow:inset 0px 0px 0px 1.5px blue;
+    background-color: dodgerblue;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.rose {
+    clear: both;
+    box-shadow:inset 0px 0px 0px 1.5px darkviolet;
+    background-color: #991668;
+    text-align: center;
+}
+
+.test1 {
+    float: left;
+    width: 33.33%;
+}
+
+.test2 {
+    float: left;
+    width: 25%;
+}
+
+.test3 {
+    float: right;
+    width: 25%;
+}
+
+.test4 {
+    float: right;
+    width: 33.33%;
+}
+
+.test5 {
+    float: right;
+    width: 50%;
+}
+
+.test6 {
+    float: left;
+    width: 50%;
+}

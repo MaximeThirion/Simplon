@@ -1,0 +1,283 @@
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+#navigation {
+    height: 70px;
+    width: 100%;
+    background-color: #1d1d1d;
+    float: right;
+    position: fixed;
+}
+
+#feuille {
+    height: 30px;
+    width: 30px;
+}
+
+.titrenav{
+    margin: 20px 2.5% 0px 18%;
+    width: 32%;
+    float: left;
+}
+
+.titre {
+    color: white;
+    float: left;
+}
+
+.titre2 {
+    float: left;
+    color: white;
+    margin: 0px 0px 5px 10px;
+    font-size: 1.5em;
+}
+
+.liennav {
+    margin: 25px 5% 0px 2.5%;
+    width: 40%;
+    float: left;
+}
+
+.liennav a {
+    text-decoration: none;
+    color: white;
+}
+
+.lien {
+    color: #196d13;
+    margin: 0px 5px 0px 10px;
+}
+
+.sec1 {
+    padding: 150px 0px 0px 15%;
+    color: white;
+    background-image: url("http://123hdwallpaperpic.com/download/20150524/blur-1920x1080.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 380px;
+}
+
+.sec2 {
+    height: 380px;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+    padding: 0px 10px 0px 10px;
+}
+
+.sec3 {
+    height: 380px;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+}
+
+.sec4 {
+    height: 380px;
+    width: 80%;
+    margin: 0px 10% 0px 10%;
+}
+
+.sec4 p {
+    float: right;
+    width: 120px;
+    height: 80px;
+    margin: 0px;
+    color: #8D8D8D;
+    font-size: 0.8em;
+}
+
+.sec3 p {
+    float: left;
+    width: 50%;
+    margin-left: 25px;
+    text-align: center;
+    color: #8D8D8D;
+}
+
+.sec1 h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.sec1 p {
+    font-size: 1.2em;
+    margin: 2px 0px 2px 5px;
+}
+
+.bouton1 {
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #5FAB17;
+    border: solid #5FAB17 1px;
+    border-radius: 5px;
+}
+
+.blocsec1 {
+    float: left;
+    margin: 80px 7.5% 80px 0px;
+    text-align: center;
+    color: #8D8D8D;
+    width: 25%;
+}
+
+.blocsec1 h2, p {
+    width: 80%;
+    margin: 25px 10% 25px 10%;
+}
+
+.blocsec1 p {
+    font-size: 0.8em;
+}
+
+.blocsec2 {
+    float: left;
+    margin: 80px 5% 80px 5%;
+    text-align: center;
+    color: #8D8D8D;
+    width: 25%;
+}
+
+.blocsec2 h2, p {
+    width: 80%;
+    margin: 25px 10% 25px 10%;
+}
+
+.blocsec2 p {
+    font-size: 0.8em;
+}
+
+.blocsec3 {
+    float: left;
+    margin: 80px 0px 80px 7.5%;
+    text-align: center;
+    color: #8D8D8D;
+    width: 25%;
+}
+
+.blocsec3 h2, p {
+    width: 80%;
+    margin: 25px 10% 25px 10%;
+}
+
+.blocsec3 p {
+    font-size: 0.8em;
+}
+
+.imagesec {
+    height: 100px;
+    width: 100%;
+    background-color: #DFDFDF;
+}
+
+.cl {
+    clear: both;
+
+}
+
+.titreavis {
+    line-height: 30px;
+    width: 230px;
+    color: white;
+    background-color: #5FAB17;
+    border: solid #5FAB17 1px;
+    border-radius: 2px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.imageavis {
+    height: 150px;
+    width: 25%;
+    background-color: #DFDFDF;
+    float: left;
+    margin: 50px 2.5% 0px 0px;
+}
+
+.guillemet {
+    height: 35px;
+    width: 50px;
+    margin: 50px 100px 0px 2.5%;
+    float: left;
+}
+
+.cercle {
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #8D8D8D;
+    margin-right: 20px;
+}
+
+.imagemap {
+    background-image: url("https://www.harvard.edu/sites/default/files/content/harvard-map-google.jpg");
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-position: -280px -80px;
+    margin-top: 50px;
+}
+
+.adresse {
+    float: right;
+    margin: 60px 22% 0px 0px;
+    width: 180px;
+}
+
+.adresse p {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.adresse2 {
+    float: right;
+    margin: 60px 15% 0px 0px;
+    width: 200px;
+    height: 25px;
+}
+
+.adresse3 {
+    float: left;
+    height: 50px;
+    width: 200px;
+    margin: -50px 0px 0px 35px;
+}
+
+.adresse2 p {
+    margin-top: 7px;
+    height: 25px;
+}
+
+.reseaux {
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding: 15px 15px 15px 15px;
+    margin-right: 10px;
+    float: left;
+}
+
+.facebook {
+    background-image: url("https://www.escpeuropealumni.org/images/upload/logo_fb.jpg");
+}
+
+.twitter {
+    background-image: url("https://www.e-monsite.com/medias/images/twitter-1.png");
+}
+
+.google {
+    background-image: url("https://www.e-monsite.com/medias/images/google-plus.png");
+}
+
+.linkedin {
+    background-image: url("https://www.escpeuropealumni.org/images/upload/logo_li.png");
+}
+
+fieldset {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-color: #8D8D8D;
+}

@@ -1,0 +1,84 @@
+#block {
+    height: 400px;
+    width: 405px;
+    border-left: dashed #adadad 2px;
+    border-right: dashed #adadad 2px;
+    padding: 10px 0px 10px 20px;
+    margin-left: 350px;
+}
+
+#cl {
+    clear: both;
+}
+
+.fond {
+    float: left;
+    background-image: url("http://front.rocks/tp/03-html-css-advanced/tp5/img/goal.png");
+    height: 86px;
+    width: 86px;
+    margin: 5px;
+}
+
+.cel1 {
+    background-position: -9px -6px;
+}
+
+.cel2 {
+    background-position: -105px -6px;
+}
+
+.cel3 {
+    background-position: -201px -6px;
+}
+
+.cel4 {
+    background-position: -297px -6px;
+}
+
+.cel5 {
+    background-position: -9px -102px;
+}
+
+.cel6 {
+    background-position: -105px -102px;
+}
+
+.cel7 {
+    background-position: -201px -102px;
+}
+
+.cel8 {
+    background-position: -297px -102px;
+}
+
+.cel9 {
+    background-position: -9px -198px;
+}
+
+.cel10 {
+    background-position: -105px -198px;
+}
+
+.cel11 {
+    background-position: -201px -198px;
+}
+
+.cel12 {
+    background-position: -297px -198px;
+}
+
+.cel13 {
+    background-position: -9px -294px;
+}
+
+.cel14 {
+    background-position: -105px -294px;
+}
+
+.cel15 {
+    background-position: -201px -294px;
+}
+
+.cel16 {
+    background-position: -297px -294px;
+}

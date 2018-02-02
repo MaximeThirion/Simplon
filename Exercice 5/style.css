@@ -1,0 +1,33 @@
+a:hover {
+    color: #B232FB;
+    text-decoration: none;
+}
+
+input:required {
+    border-color: red;
+}
+
+input:focus {
+    background-color: #33802f;
+    border-color: #196d13;
+}
+
+td {
+    border: solid black 1px;
+}
+
+table tr:nth-child(2n+1 ) {
+    background-color: #4872ff;
+}
+
+td:hover {
+    background-color: #E9FDEC;
+}
+
+button:focus {
+    background-color: yellow;
+}
+
+button:active {
+     background-color: blue;
+}

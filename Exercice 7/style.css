@@ -1,0 +1,97 @@
+#conteneur {
+    height: 900px;
+    width: 100%;
+    background-color: #5b8497;
+}
+
+.bloc {
+    float: left;
+    box-shadow:inset 0px 0px 0px 2px black;
+    border-radius: 5px;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+
+.fond {
+    background-image: url("https://img.20mn.fr/r5SvxqSZSrWS4W587_eJxw/830x532_fond-ecran-defaut-windows-xp");
+}
+
+.bloc1 {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: bottom right;
+}
+
+.bloc2 {
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.bloc3 {
+    background-repeat: repeat-y;
+    background-size: 80%;
+    background-position: right;
+}
+
+.bloc4 {
+    background-repeat: repeat;
+    background-size: 80%;
+    background-position: right;
+}
+
+.bloc5 {
+    background-repeat: repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.bloc6 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.bloc7 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+p {
+    font-size: 1.5em;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.bloc7 p {
+    color: white;
+}
+
+.bloc8 {
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.bloc9 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 41.75px 55px;
+    margin: 2px 2px 2px 2px;
+}
+
+.bloc10 {
+    background-repeat: repeat-y;
+    background-size: 100% 50%;
+    background-position: top;
+}
+
+.gauche {
+    float: left;
+}
+
+.droite {
+    float: right;
+}
