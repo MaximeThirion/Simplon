@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    font-family: Padauk;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.liennav {
+    background-color: black;
+    height: 55px;
+    width: 85%;
+    border-bottom: 5px solid #8E981D;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.liennavg {
+    background-color: black;
+    height: 100px;
+    width: 15%;
+    border-bottom: 5px solid #8E981D;
+}
+
+.liennav a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 6px 10px 2px 10px;
+}
+
+.liennav a:hover {
+    box-shadow: inset;
+    background-color: #8E981D;
+    border-radius: 10px;
+}
+
+.expo {
+    background-color: #8E981D;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    height: 140px;
+    width: 250px;
+    text-align: center;
+}
+
+.expo h1 {
+    font-size: 2.6em;
+    margin: 30px 0px 0px 0px;
+}
+
+.expo h3 {
+    margin: -10px 0px 0px 0px;
+}
+
+.recherche {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.recherche img {
+    height: 30px;
+    width: 30px;
+    margin-left: 2px;
+}
+
+.sec {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+}
+
+.secs {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    width: 75%;
+    justify-content: right;
+}
+
+.seccon {
+    background-color: #8E981D;
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
