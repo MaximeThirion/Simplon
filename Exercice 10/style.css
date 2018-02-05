@@ -126,10 +126,12 @@ iframe {
 }
 
 .inpmail {
-    line-height: 50px;
+    line-height: 40px;
     background-color: white;
     border: 1px solid #8D8D8D;
     border-radius: 15px 0px 0px 15px;
+    padding: 5px 10px 5px 20px;
+    width: 200px;
 }
 
 .bouton {
@@ -137,7 +139,7 @@ iframe {
     border: 1px solid #8D8D8D;
     border-radius: 0px 15px 15px 0px;
     color: white;
-    width: 150px;
+    width: 120px;
     font-size: 1.5em;
     margin-left: -1px;
 }
