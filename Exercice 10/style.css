@@ -123,8 +123,10 @@ p {
     margin: 40px 0px -10px 0px;
 }
 
-.sec4 p {
+.sec4 a {
     margin: 30px 15px 30px 15px;
+    color: #8D8D8D;
+    text-decoration: none;
 }
 
 iframe {
