@@ -168,4 +168,3 @@ calcul5 = function () {
     console.log(result)
 }
 calcul5(5, 10, 2, 30);
-
