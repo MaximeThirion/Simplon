@@ -36,13 +36,26 @@ exo3 = function () {
     resultat = 0;
     for (i = 0; i < arguments.length; i++) {
         tableau.push(arguments[i]);
-    }
-    for (a = 0; a < tableau.length; a++) {
-        resultat = (resultat + tableau[a]);
+        resultat = (resultat + tableau[i]);
     }
     result = resultat / tableau.length;
     console.log(tableau);
     console.log(result);
 };
 
-exo3(10, 5, 15, 12, 7, 9, 6);
+exo3(10, 5, 15, 12, 7, 9, 6, 5);
+
+//exercice 4
+
+exo4 = function (x) {
+    for (i = 2; i < x; i++) {
+        if(x % i === 0) {
+            return console.log (x + " n'est pas premier");
+        }
+        else {
+            console.log(x + " est premier");
+        }
+    }
+};
+
+exo4(12);
