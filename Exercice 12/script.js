@@ -158,7 +158,7 @@ calcul4 = function (x) {
     }
     console.log(resultat);
 }
-console.log(calcul4(6));
+calcul4(6);
 // créer une fonction qui prends un nombre illimité de paramètres et qui calcule la somme de tous ces paramètres
 calcul5 = function () {
     result = 0;
@@ -167,5 +167,5 @@ calcul5 = function () {
     }
     console.log(result)
 }
-console.log(calcul5(5, 10, 2, 30));
+calcul5(5, 10, 2, 30);
 
