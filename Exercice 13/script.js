@@ -29,14 +29,16 @@ exo2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 //exercice 3
 
 tableau = [];
+chiffre_a_saisir = 0;
 nombre_saisie = [];
 
 console.log(tableau);
 
 exo3 = function () {
     resultat = 0;
-    while (nombre_saisie.length < 5) {
-        saisie = prompt("Saisissez un chiffre");
+    chiffre_a_saisir = prompt("Combien de chiffre ?");
+    while (nombre_saisie.length < chiffre_a_saisir) {
+        saisie = prompt("Saisissez les chiffres");
         nombre = parseInt(saisie);
         nombre_saisie.push(nombre);
     }
