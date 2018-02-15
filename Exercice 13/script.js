@@ -29,13 +29,19 @@ exo2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 //exercice 3
 
 tableau = [];
+nombre_saisie = [];
 
 console.log(tableau);
 
 exo3 = function () {
     resultat = 0;
-    for (i = 0; i < arguments.length; i++) {
-        tableau.push(arguments[i]);
+    while (nombre_saisie.length < 5) {
+        saisie = prompt("Saisissez un chiffre");
+        nombre = parseInt(saisie);
+        nombre_saisie.push(nombre);
+    }
+    for (i = 0; i < nombre_saisie.length; i++) {
+        tableau.push(nombre_saisie[i]);
         resultat = (resultat + tableau[i]);
     }
     result = resultat / tableau.length;
@@ -43,7 +49,7 @@ exo3 = function () {
     console.log(result);
 };
 
-exo3(10, 5, 15, 12, 7, 9, 6, 5);
+exo3();
 
 //exercice 4
 
