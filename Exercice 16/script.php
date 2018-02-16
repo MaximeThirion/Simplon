@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exercice9.css">
 </head>
 <body>
 <?PHP
@@ -15,7 +15,7 @@
  */
 
 echo "<form method='post'><input type='text' placeholder='Nombre de carre' name='nombre_de_carre'><br>
-<input type='text' placeholder='Nombre de rond' name='nombre_de_rond'><br>
+<input type='text' placeholder='Nombre de rond par carre' name='nombre_de_rond'><br>
 <input type='submit' name='envoyer'></form>";
 
 $nombre_de_carre = $_POST['nombre_de_carre'];
@@ -32,13 +32,13 @@ if (isset($_POST[envoyer])) {
         $random_couleur_carre = $couleur_carre[$random];
         $random_taille_carre = $taille_carre[$random2];
         echo "<div class='$random_couleur_carre $random_taille_carre'>";
-            for ($j = 0; $j < $nombre_de_rond; $j++) {
-                $random3 = rand(0, 2);
-                $random4 = rand(0, 2);
-                $random_couleur_rond = $couleur_rond[$random3];
-                $random_taille_rond = $taille_rond[$random4];
-                echo "<div class='$random_couleur_rond $random_taille_rond'></div>";
-            }
+        for ($j = 0; $j < $nombre_de_rond; $j++) {
+            $random3 = rand(0, 2);
+            $random4 = rand(0, 2);
+            $random_couleur_rond = $couleur_rond[$random3];
+            $random_taille_rond = $taille_rond[$random4];
+            echo "<div class='$random_couleur_rond $random_taille_rond'></div>";
+        }
         echo "</div>";
     }
 };
