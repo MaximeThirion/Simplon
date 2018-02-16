@@ -1,0 +1,62 @@
+.rouge {
+    background-color: #8e0000;
+    border-radius: 50%;
+}
+
+.bleu {
+    background-color: #000088;
+    border-radius: 50%;
+}
+
+.vert {
+    background-color: #003600;
+    border-radius: 50%;
+}
+
+.crouge {
+    background-color: red;
+    float: left;
+    border: 1px solid black;
+}
+
+.cbleu {
+    background-color: blue;
+    float: left;
+    border: 1px solid black;
+}
+
+.cvert {
+    background-color: green;
+    float: left;
+    border: 1px solid black;
+}
+
+.petit {
+    height: 100px;
+    width: 100px;
+}
+
+.moyen {
+    height: 150px;
+    width: 150px;
+}
+
+.grand {
+    height: 200px;
+    width: 200px;
+}
+
+.petit_rond {
+    height: 20px;
+    width: 20px;
+}
+
+.moyen_rond {
+    height: 30px;
+    width: 30px;
+}
+
+.grand_rond {
+    height: 40px;
+    width: 40px;
+}
