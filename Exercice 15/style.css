@@ -89,3 +89,15 @@ fieldset {
     clear: both;
 }
 
+input ~ div {
+    font-style: italic;
+    margin: 5px 14px 5px 200px;
+}
+
+.error2 {
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: #ff3c3d;
+    font-style: italic;
+    margin-top: 5px;
+}

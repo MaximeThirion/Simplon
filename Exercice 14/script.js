@@ -14,12 +14,15 @@ function addProduct(code){
         const produit = productsList[i];
         if (produit.code === code) {
             // modifier la propriété nombre de cet objet
-            produit.total++;
+            if (produit.total < 5) {
+                produit.total++;
+            }
             // pour représenter le fait d'avoir un élément de plus sélectionné
             console.log(produit);
         }
     }
     displayCaddie();
+    displayPrix();
 }
 
 /**
@@ -31,19 +34,38 @@ function deleteProduct(code){
     for (j = 0; j < productsList.length; j++) {
         const produit = productsList[j];
         if (produit.code === code) {
+            if (produit.total > 0) {
+                produit.total--;
+            }
             // modifier la propriété nombre de cet objet
-            produit.total--;
             // pour représenter le fait d'avoir un élément de moins sélectionné
             console.log(produit);
         }
     }
     displayCaddie();
+    displayPrix();
 }
 
 /**
  * fonction pour afficher la liste des produits
  */
 function displayCaddie(){
-    let list = "Livre : " + "<br>" + "Console : " + "<br>" + "Fleur : ";
+    let list = "";
+    for (k = 0; k < productsList.length; k++) {
+        const produit = productsList[k];
+        if (produit.total > 0) {
+            list += produit.name + " : " + produit.total + "<br>";
+        }
+    }
     document.getElementById("resultat").innerHTML = list;
+}
+
+function displayPrix(){
+    let list2 = "Prix total : ";
+    let prix = 0;
+    for (k = 0; k < productsList.length; k++) {
+        const produit = productsList[k];
+        prix += (produit.price * produit.total);
+    }
+    document.getElementById("prix").innerHTML = list2 + prix;
 }

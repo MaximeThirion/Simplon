@@ -1,4 +1,4 @@
-/*
+/**
  * Gestion avancée :
  * selecteur : document.querySelector(cssRule) et document.querySelectorAll(cssRule)
  * gestion classes :
@@ -8,126 +8,155 @@
  element.classList.toggle(className)
  * gestion select : element.selectedIndex; element.options;
  */
-
 // inputsText = document.querySelectorAll("form input[type='text']");
+document.addEventListener("DOMContentLoaded", function (save) {
 
-document.addEventListener("DOMContentLoaded", function(){
+    const subscription_login_input = document.getElementById('subscription_login');
+    const subscription_password_input = document.getElementById('subscription_password');
+    const subscription_password2_input = document.getElementById('subscription_password2');
+
+    // const supprimer_erreur = function (nom_de_classe, emplacement_enfant) {
+    //     while (nom_de_classe.parentNode.children[emplacement_enfant] != null) {
+    //         nom_de_classe.parentNode.removeChild(nom_de_classe.parentNode.children[emplacement_enfant])
+    //     }
+    // };
+
+    const supprimer_erreur2 = function (emplacement) {
+        const errorDiv = document.querySelectorAll(emplacement);
+        for (let i = 0; i < errorDiv.length; i++) {
+            const div = errorDiv[i];
+            div.parentNode.removeChild(div);
+        }
+    };
+
+    const creerDiv = function (emplacement, texte) {
+        const errorDiv = document.createElement('div');
+        errorDiv.classList.add('error2');
+        errorDiv.textContent = texte;
+        emplacement.parentNode.appendChild(errorDiv);
+    };
 
     // evenement keyup pour tous les input text
-    // => si saisie entre 4 et 8 caractères, ajouter la class "success" sur le input, sinon ajouter la classe "error" sur le input
+    // je récupère le champs input
 
-const creerdiv = document.createElement("div");
-creerdiv.setAttribute('id', 'erreur');
-const apres_div = document.getElementById("ancre");
+    // j'ajoute un écouter d'événement "keyup"
+    subscription_login_input.addEventListener("keyup", function (event) {
+        // => si saisie entre 4 et 8 caractères,
+        const list = subscription_login_input.classList;
+        const saisie = subscription_login_input.value;
+        const parent = subscription_login_input.parentNode;
 
-test = function () {
+        supprimer_erreur2('input ~ div');
 
-    login = document.getElementById("subscription_login").value;
+        if (saisie.length >= 4 && saisie.length <= 8) {
+            // ajouter la class "success" sur le input, + retirer error
+            list.add('success');
+            list.remove('error');
+            // supprimer_erreur(subscription_login_input, 2);
 
-    if (login.length > 3 && login.length < 9) {
-        document.getElementById("subscription_login").classList.remove("error");
-        document.getElementById("subscription_login").classList.add("success");
-    }
-    else {
-        document.getElementById("subscription_login").classList.remove("success");
-        document.getElementById("subscription_login").classList.add("error");
-    }
-};
+        } else {
+            list.add('error');
+            list.remove('succes');
 
-test2 = function () {
+            const errorDiv = document.createElement('div');
+            errorDiv.classList.add('error');
+            errorDiv.textContent = 'Le login doit contenir entre 4 et 8 caractères';
 
-    pass = document.getElementById("subscription_password").value;
+            parent.appendChild(errorDiv);
 
-    if (pass.length > 3 && pass.length < 9) {
-        document.getElementById("subscription_password").classList.remove("error");
-        document.getElementById("subscription_password").classList.add("success");
-    }
-    else {
-        document.getElementById("subscription_password").classList.remove("success");
-        document.getElementById("subscription_password").classList.add("error");
-    }
-};
+            // supprimer_erreur(subscription_login_input, 3);
 
-test3 = function () {
+            // while (parent.children[3] != null) {
+            //     parent.removeChild(parent.children[3]);
+            // }
+        }
+    });
 
-    pass2 = document.getElementById("subscription_password2").value;
+    subscription_password_input.addEventListener('keyup', function (event) {
 
-    if (pass2.length > 3 && pass2.length < 9) {
-        document.getElementById("subscription_password2").classList.remove("error");
-        document.getElementById("subscription_password2").classList.add("success");
-    }
-    else {
-        document.getElementById("subscription_password2").classList.remove("success");
-        document.getElementById("subscription_password2").classList.add("error");
-    }
-};
+        const list = subscription_password_input.classList;
+        const saisie = subscription_password_input.value;
+        const parent = subscription_password_input.parentNode;
+
+        supprimer_erreur2('input ~ div');
+
+        if (saisie.length >= 4 && saisie.length <= 8) {
+            list.add('success');
+            list.remove('error');
+
+        } else {
+            list.add('error');
+            list.remove('succes');
+
+            const errorDiv = document.createElement('div');
+            errorDiv.classList.add('error');
+            errorDiv.textContent = 'Le mot de passe doit contenir entre 4 et 8 caractères';
+
+            parent.appendChild(errorDiv);
+        }
+    });
 
     // évènement à la soumission du formulaire
+    const formulaire = document.querySelector('form');
 
-soumettre = function (event) {
+    formulaire.addEventListener('submit', function (event) {
 
-    login = document.getElementById("subscription_login").value;
-    pass = document.getElementById("subscription_password").value;
-    pass2 = document.getElementById("subscription_password2").value;
+        supprimer_erreur2('input ~ div');
 
-    // => vérifier que tous les champs sont renseignés
+        event.preventDefault();
 
-    if (login && pass && pass2 != "") {
+        const login = subscription_login_input.value;
+        const password = subscription_password_input.value;
+        const password2 = subscription_password2_input.value;
+        console.log(subscription_login_input.value);
 
-        // => vérifier que le login est différent du mot de passe
+        const fieldsRequired = document.querySelectorAll('form input[type=text], form input[type=password]');
+        const checkboxRequired = document.querySelector(    'form input[type=checkbox]');
 
-        if (login != pass) {
+        for (let i = 0; i < fieldsRequired.length; i++) {
 
-            // => vérifier que le login est différent du mot de passe
+            const field = fieldsRequired[i];
+            const value = field.value;
 
-            if (pass == pass2) {
+            if (value.length === 0) {
+                field.classList.add('error');
+                creerDiv(field, 'ce champs est requis')
+            }
+        }
 
-                // => vérifier que le login ne contient pas "admin","administrator","superadmin","chuck", "root", "postmaster"
+        if (checkboxRequired.checked === true) {
+            console.log('Check')
+        }
+        else {
+            console.log('Pas Check')
+        }
+
+        if (login !== password) {
+            console.log('Login et Password sont differents');
+
+            if (password === password2) {
+                console.log('Mots de passe identiques');
 
                 if (login != "admin" && login != "administrator" && login != "superadmin" && login != "chuck" && login != "root" && login != "postmaster") {
+                    console.log('Login correct');
 
-                    // => supprimer toutes les div>div dans le formulaire
-
-                    console.log("reussi");
-                    erreur = document.getElementById("erreur");
-                    erreur.parentNode.removeChild(erreur);
-
-                    while (apres_div.firstChild) {
-                        apres_div.removeChild(apres_div.firstChild);
-                    }
                 }
                 else {
-                    // => créer une div juste avant contenant le message d'erreur pour chaque erreur
-
-                    message = document.createTextNode("Login invalide");
-                    creerdiv.appendChild(message);
-                    document.body.insertBefore(creerdiv, apres_div);
-                    console.log("Login invalide");
+                    console.log('Login incorrect');
                 }
             }
             else {
-                // => créer une div juste avant contenant le message d'erreur pour chaque erreur
-
-                message = document.createTextNode("Les mots de passe ne sont pas identiques");
-                creerdiv.appendChild(message);
-                document.body.insertBefore(creerdiv, apres_div);
+                console.log('Mots de passe differents');
             }
         }
         else {
-            // => créer une div juste avant contenant le message d'erreur pour chaque erreur
-
-            message = document.createTextNode("Login et Pass sont identiques");
-            creerdiv.appendChild(message);
-            document.body.insertBefore(creerdiv, apres_div);
-
+            console.log('Login et Password sont identiques');
         }
-    }
-    else {
-        // => créer une div juste avant contenant le message d'erreur pour chaque erreur
-
-        message = document.createTextNode("Champs vides");
-        creerdiv.appendChild(message);
-        document.body.insertBefore(creerdiv, apres_div);
-    }
-};
+    })
+    // => supprimer toutes les div>div dans le formulaire
+    // => vérifier que tous les champs sont renseignés
+    // => vérifier que le login est différent du mot de passe
+    // => vérifier que les mots de passe sont identiques
+    // => vérifier que le login ne contient pas "admin","administrator","superadmin","chuck", "root", "postmaster"
+    // => créer une div juste avant contenant le message d'erreur pour chaque erreur
 });
