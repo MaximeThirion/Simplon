@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function (save) {
         const forme = select_shape.value;
         const couleur = select_color.value;
         const taille = select_size.value;
-        const taille2 = parseInt(taille.substring(1, taille.length));
+        const taille2 = parseInt(taille);
         // console.log(forme, couleur, taille);
 
         // récupération de la position du clic
@@ -48,8 +48,21 @@ document.addEventListener("DOMContentLoaded", function (save) {
         newDiv = document.createElement("div");
 
         // ajout des classes correspondantes
-        newDiv.style.backgroundColor = couleur;
-        newDiv.classList.add(forme, taille);
+
+        console.log(forme);
+
+        newDiv.classList.add(forme);
+        
+        if (forme === "triangle") {
+            newDiv.style.backgroundColor = "transparent";
+            newDiv.style.borderColor = "transparent transparent " + couleur + " transparent";
+            newDiv.style.borderWidth = "0 " + (taille / 2) + "px " + taille + "px " + (taille / 2) + "px";
+        }
+        else {
+            newDiv.style.backgroundColor = couleur;
+            newDiv.style.width = taille + "px";
+            newDiv.style.height = taille + "px";
+        }
 
         // ajout de la position de l'élément
         // console.log(position_a_gauche, position_en_haut);
