@@ -1,0 +1,93 @@
+body { margin: 0; }
+#panel {
+    padding: 5px;
+}
+select {
+    width: 33%;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#board  {
+    width: 100%;
+    height: 300px;
+    background: #000;
+    position: relative; /* pour placer dedans en absolute */
+}
+
+#board div {
+    /* pour que les divs soient placés dans le #board en absolu */
+    position: absolute;
+}
+
+/** utilitaires **/
+.clearfix{ clear: both; }
+
+/* shape */
+.square{} /* rien de special pour un carré */
+.round{ border-radius: 50%; }
+.losange{ transform: rotate(45deg); }
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 100px;
+    border-color: transparent transparent #007bff transparent;
+}
+
+.triangle.w10 {
+    width: 0;
+    height: 0;
+    border-width: 0 5px 10px 5px;
+}
+
+.triangle.w25 {
+    width: 0;
+    height: 0;
+    border-width: 0 20px 25px 20px;
+}
+
+.triangle.w50 {
+    width: 0;
+    height: 0;
+    border-width: 0 40px 50px 40px;
+}
+
+.triangle.w100 {
+    width: 0;
+    height: 0;
+    border-width: 0 80px 100px 80px;
+}
+
+.triangle.blue {
+    background-color: transparent;
+    border-color: transparent transparent blue transparent;
+}
+
+.triangle.yellow {
+    background-color: transparent;
+    border-color: transparent transparent yellow transparent;
+}
+
+.triangle.red {
+    background-color: transparent;
+    border-color: transparent transparent red transparent;
+}
+
+.triangle.green {
+    background-color: transparent;
+    border-color: transparent transparent green transparent;
+}
+
+/* color */
+.blue{ background-color: blue; }
+.yellow{ background-color: yellow; }
+.red{ background-color: red; }
+.green{ background-color: green; }
+
+/* size */
+.w10  { width: 10px; height: 10px; }
+.w25  { width: 25px; height: 25px; }
+.w50  { width: 50px; height: 50px; }
+.w100 { width: 100px; height: 100px; }
