@@ -1,0 +1,15 @@
+#picture1 {
+    width: 280px;
+    height: 420px;
+    background-color: lightblue;
+    position: relative;
+}
+
+#picture1>div {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #FFF;
+    /*border: 1px solid #CCC;*/
+}
