@@ -1,0 +1,84 @@
+/** écrire les règles CSS des consignes indiquées dans la partie HTML **/
+
+/* nth-child(odd|even) */
+
+tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+tr:hover td:first-child {
+    background-color: #DBB;
+}
+
+p span {
+    display: block;
+}
+
+p span::first-letter {
+    color:red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p:first-line {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div > div {
+    height: 20px;
+    width: 20px;
+}
+
+div > div:nth-child(4n+1) {
+    background-color: #1DE58B;
+}
+
+div > div:nth-child(4n+2) {
+    background-color: #0566F1;
+}
+
+div > div:nth-child(4n+3) {
+    background-color: #F29E09;
+}
+
+div > div:nth-child(4n+4) {
+    background-color: #9DE042;
+}
+
+li a[href *= "google"]::after {
+    content: "➚";
+}
+
+#heart {
+    height: 100px;
+    width: 100px;
+    display: block;
+    background-color: red;
+    transform: rotate(45deg);
+    margin: 50px 100px 50px 50px;
+    position: relative;
+}
+
+#heart::before {
+    position: relative;
+    display: block;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    top: -50px;
+}
+
+#heart::after {
+    position: relative;
+    display: block;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    top: -100px;
+    left: -50px;
+}
