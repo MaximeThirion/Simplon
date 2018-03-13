@@ -54,7 +54,7 @@ li a[href *= "google"]::after {
     height: 100px;
     width: 100px;
     display: block;
-    background-color: red;
+    background-color: black;
     transform: rotate(45deg);
     margin: 50px 100px 50px 50px;
     position: relative;
@@ -67,8 +67,8 @@ li a[href *= "google"]::after {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: red;
-    top: -50px;
+    background-color: black;
+    top: 50px;
 }
 
 #heart::after {
@@ -78,7 +78,7 @@ li a[href *= "google"]::after {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: red;
+    background-color: black;
     top: -100px;
-    left: -50px;
+    left: 50px;
 }
