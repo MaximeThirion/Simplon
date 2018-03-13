@@ -2,6 +2,10 @@
 
 /* nth-child(odd|even) */
 
+body{
+    background-color: #9bd4ff;
+}
+
 tr:nth-child(even) {
     background-color: #DDD;
 }
@@ -50,35 +54,41 @@ li a[href *= "google"]::after {
     content: "➚";
 }
 
+#container {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
 #heart {
+    position: relative;
     height: 100px;
     width: 100px;
-    display: block;
     background-color: black;
-    transform: rotate(45deg);
     margin: 50px 100px 50px 50px;
-    position: relative;
 }
 
 #heart::before {
-    position: relative;
-    display: block;
     content: "";
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: black;
-    top: 50px;
+    top: 51px;
+    transform: rotate(-45deg);
+    box-shadow: inset -6px -6px #afafaf;
+    position: absolute;
+    z-index: -1;
 }
 
 #heart::after {
-    position: relative;
-    display: block;
     content: "";
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: black;
-    top: -100px;
-    left: 50px;
+    left: 51px;
+    transform: rotate(-45deg);
+    box-shadow: inset -6px -6px #afafaf;
+    position: absolute;
+    z-index: -1;
 }

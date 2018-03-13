@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/*
+ rappel selecteur par attribut
+  - [attr^="value"] attr commence par "value"
+  - [attr$="value"] attr fini par "value"
+  - [attr*="value"] attr contient "value"
+*/
+ul {
+    padding: 0;
+}
+ul li {
+    float: left;
+    list-style-type: none;
+}
+ul li a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #CCC;
+    text-decoration: none;
+    color: black;
+    background: #EEE;
+    border: 3px solid white;
+}
+/* si l'attribut title de la balise a : */
+/* - finit par merge: texte en gras */
+a[title$="merge"] {
+    font-weight: bold;
+}
+/* - contient background : couleur de fond #555 et texte #FFF */
+a[title*="background"] {
+    background-color: #555;
+    color: #FFF;
+}
+/* - commence par font ou text : texte en italic */
+a[title^="font"] {
+    font-style: italic;
+}
+a[title^="text"] {
+    font-style: italic;
+}
+/* - commence par box : texte en majuscule */
+a[title^="box"] {
+    text-transform: uppercase;
+}
+/* - contient border : border de 3 pixel en #161828 */
+a[title*="border"] {
+    border: 3px solid #161828;
+}
+/* - contient top : bordure en haut rouge de 3pixel */
+a[title*="top"] {
+    border-top: 3px solid red;
+}
+/* - contient bottom : bordure en bas rouge de 3pixel */
+a[title*="bottom"] {
+    border-bottom: 3px solid red;
+}
+/* - contient radius : border radius de 20px */
+a[title*="radius"] {
+    border-radius: 20px;
+}
+/* - contient shadow : ombre #506083 ,  5px en haut,  radius 5px, 10px à droite */
+a[title*="shadow"] {
+    box-shadow: 10px 5px 5px #506083;
+}
+/* - contient color : background dégradé de rouge à jaune incliné de 45degrés */
+a[title*="color"]{
+    background-image: linear-gradient(45deg, red, yellow);
+}
+/* - commence par list: rajouter le cractère "➣" avant en 10px ( pseudo element ) */
+a[title^="list"]:before {
+    content: "➣";
+    font-size: 10px;
+}
