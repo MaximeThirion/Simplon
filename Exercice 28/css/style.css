@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+@import "https://fonts.googleapis.com/css?family=Merriweather";
+body {
+  font-family: "Open Sans", sans-serif; }
+
+header {
+  background-image: url("../image/background_header.png");
+  background-position: center;
+  background-size: cover;
+  height: 951px;
+  color: white; }
+  header img {
+    position: relative;
+    top: 62px; }
+  header strong {
+    position: relative;
+    top: 50px;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    font-size: 21px; }
+  header h1 {
+    position: relative;
+    top: 400px;
+    font-size: 60px; }
+  header p {
+    position: relative;
+    top: 430px;
+    width: 400px;
+    font-size: 13px;
+    line-height: 26px; }
+
+header .container {
+  height: 951px; }
+
+header .container::after {
+  content: url("../image/iPhone.png");
+  position: relative;
+  bottom: -120px;
+  left: 365px; }
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#something_new {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px; }
+
+#diapo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 556px;
+  margin-bottom: 80px; }
+
+#something_new:nth-child(1) h2 {
+  margin-top: 113px;
+  font-size: 35px;
+  color: #222626;
+  width: 100%; }
+#something_new:nth-child(1) p {
+  color: #959595;
+  text-align: left;
+  margin-top: 30px;
+  width: 485px;
+  line-height: 24px; }
+
+#diapo article {
+  width: 333.3px; }
+  #diapo article h3 {
+    font-size: 30px;
+    margin-top: 51px;
+    margin-left: 40px;
+    color: white; }
+  #diapo article p {
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 24px;
+    margin-left: 40px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    color: white; }
+  #diapo article a {
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+    color: white;
+    font-weight: bold; }
+  #diapo article a:after {
+    content: "→";
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 2px; }
+
+#diapo article:nth-child(1) {
+  background-color: #f5989d; }
+
+#diapo article:nth-child(2) {
+  background-color: #615f7d; }
+
+#diapo article:nth-child(3) {
+  background-image: url("../image/Layer_6.png"); }
+  #diapo article:nth-child(3) a {
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+    top: 20px;
+    color: white;
+    font-weight: bold; }
+
+#diapo article:nth-child(3):after {
+  content: "♡";
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 110px;
+  position: relative;
+  top: 40px; }
+
+#diapo article:nth-child(4) {
+  background-image: url("../image/Layer_5.png");
+  width: 666.6px; }
+  #diapo article:nth-child(4) a {
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+    top: 20px;
+    color: white;
+    font-weight: bold; }
+
+#diapo article:nth-child(4):after {
+  content: "♡";
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 400px;
+  position: relative;
+  top: 40px; }
+
+#diapo article:nth-child(5) {
+  background-color: #82ca9c; }
+
+#a_look {
+  margin-bottom: 159px; }
+  #a_look h2 {
+    color: #222626;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 68px; }
+
+#a_look_at_the_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  #a_look_at_the_details article {
+    width: 22%; }
+  #a_look_at_the_details h4 {
+    color: #66676d;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 28px; }
+  #a_look_at_the_details p {
+    color: #959595;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; }
+
+#more_power {
+  background-image: url("../image/Layer_8.png");
+  height: 874px;
+  display: flex;
+  flex-direction: column; }
+  #more_power a {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    top: 505px;
+    left: 300px;
+    font-weight: bold; }
+  #more_power a:after {
+    content: "→";
+    margin-left: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 2px; }
+  #more_power h2 {
+    color: white;
+    width: 550px;
+    font-size: 60px;
+    position: relative;
+    left: 300px;
+    top: 450px; }
+  #more_power p {
+    color: white;
+    width: 400px;
+    font-size: 13px;
+    position: relative;
+    line-height: 26px;
+    top: 480px;
+    left: 300px; }
+
+#reasons_to_get_onboard {
+  background-image: url("../image/Rectangle_5.png"); }
+
+#reasons_to {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: space-between; }
+  #reasons_to article {
+    width: 308px;
+    margin-bottom: 165px; }
+  #reasons_to h2 {
+    color: white;
+    font-size: 35px;
+    width: 100%;
+    margin-top: 125px;
+    margin-bottom: 60px;
+    height: 36px; }
+  #reasons_to h4 {
+    color: white;
+    margin-bottom: 28px; }
+  #reasons_to p {
+    color: white;
+    font-size: 14px;
+    line-height: 24px; }
+
+#go_it_solo {
+  background-color: #f6f7fa;
+  padding-bottom: 145px; }
+  #go_it_solo section {
+    display: flex; }
+  #go_it_solo article:hover {
+    background-color: white;
+    box-shadow: 0 0 2em #e5e6e9; }
+    #go_it_solo article:hover h5 {
+      background-color: #bd8cbf; }
+  #go_it_solo article::before {
+    content: url("../image/fa-apple.png");
+    position: relative;
+    top: 300px; }
+  #go_it_solo article::after {
+    content: url("../image/fa-windows.png");
+    position: relative;
+    top: 58px;
+    left: -120px; }
+  #go_it_solo article {
+    margin-top: 103px;
+    padding: 0px 50px 50px 50px; }
+    #go_it_solo article h5 {
+      width: 110px;
+      font-size: 11px;
+      line-height: 22px;
+      font-weight: 700;
+      height: 24px;
+      border-radius: 5px;
+      background-color: #e1e1e1;
+      color: white;
+      vertical-align: center;
+      margin-bottom: 23px;
+      text-align: center; }
+    #go_it_solo article h2 {
+      color: #2e3b4e;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 40px;
+      margin-bottom: 25px; }
+    #go_it_solo article p {
+      color: #8297a7;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-bottom: 25px; }
+    #go_it_solo article input {
+      background-color: #82ca9c;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 3px;
+      width: 151px;
+      height: 47px; }
+
+footer {
+  background-color: #192431;
+  height: 608px;
+  color: #f6f7fa;
+  font-family: "Open Sans", sans-serif; }
+  footer section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 47%;
+    font-size: 13px; }
+    footer section button::after {
+      content: "×";
+      color: white; }
+    footer section h4 {
+      margin-top: 130px;
+      margin-bottom: 29px; }
+    footer section p {
+      line-height: 24px; }
+    footer section label {
+      color: #56697f;
+      font-size: 12px;
+      line-height: 18px;
+      width: 50px; }
+    footer section article article {
+      display: flex;
+      flex-wrap: nowrap; }
+      footer section article article input {
+        background-color: #f6f7fa;
+        width: 400px;
+        height: 58px;
+        border: none;
+        margin-bottom: 19px; }
+      footer section article article button {
+        background-color: red;
+        position: relative;
+        height: 60px;
+        width: 73px;
+        border: none;
+        font-size: 4em;
+        vertical-align: bottom;
+        margin-left: -3px; }
+  footer section:hover button {
+    background-color: #82ca9c; }
+  footer section:hover button::after {
+    content: "✓"; }
+  footer section:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 480px; }
+    footer section:nth-child(3) article {
+      width: 33%;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      footer section:nth-child(3) article h4 {
+        margin-top: 0px; }
+      footer section:nth-child(3) article a {
+        text-decoration: none;
+        color: white;
+        width: 100%;
+        display: block;
+        line-height: 24px; }
+
+/*# sourceMappingURL=style.css.map */
