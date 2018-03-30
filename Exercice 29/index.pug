@@ -1,0 +1,26 @@
+doctype
+html
+    head
+        title mon titre
+        meta(charset="UTF-8")
+    body
+        //variables
+        -
+            menusList = ['accueil', 'articles', 'contact', 'a propos']
+            articleList = ['test', 'essai', 'lorem']
+        //header
+        header
+            nav#header
+                ul
+                    each link in menusList
+                        li #{link}
+        //main
+        main
+            div.container
+                block content
+        //footer
+        footer
+            nav#footer
+                ul
+                    each link in menusList
+                        li=link

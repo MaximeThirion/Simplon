@@ -1,0 +1,80 @@
+doctype
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    link(rel="stylesheet" href="style.css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    title BOOTSTRAP
+    script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
+  body
+    //nav
+    nav.navbar.navbar-expand-sm.fixed-top.navbar-dark.bg-dark
+      a(href="#").navbar-brand Navbar
+      button(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a(href="#").nav-link Home
+          li.nav-item.active
+            a(href="#").nav-link About
+              span.sr-only (current)
+          li.nav-item
+            a(href="#").nav-link Contact
+        form.form-inline.my-2.my-lg-0
+          input(type="search" placeholder="Rechercher" aria-label="Search").form-control.mr-sm-2
+    //alert
+    .container
+      div(role="alert").alert.alert-warning.alert-dismissible.fade.show.d-none.d-sm-block You should check in on some of those fields below.
+        button(type="button" data-dismiss="alert" aria-label="Close").close
+          span(aria-hidden="true") &times;
+      //Menu left
+      .row
+        .col-3.d-none.d-md-block
+          .card.bg-light
+            .card-header Menu
+            .card-body
+              ul.nav.nav-pills.flex-column
+                li.nav-item
+                  a(href="#").nav-link.active
+                    i.fas.fa-home
+                    | #{' '}Home
+                li.nav-item
+                  a(href="#").nav-link
+                    i.fas.fa-question-circle
+                    | #{' '}About
+                li.nav-item
+                  a(href="#").nav-link
+                    i.fas.fa-envelope
+                    | #{' '}Contact
+        //content right
+        .col-12.col-md-9
+          //breadcrumb
+          nav(aria-label="breadcrumb").d-none.d-sm-block
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href="#") Home
+              li.breadcrumb-item
+                a(href="#") About
+              li(aria-current="page").breadcrumb-item.active Team
+          //content
+          .card.bg-light
+            .card-body
+              h1.d-none.d-md-block About
+              h2 Our Team
+              //team members
+              .row
+                - for (let i = 0; i < 12; i++)
+                  .col-lg-3.col-md-4.col-sm-6.pb-2
+                    img(src="https://placeholdit.co//i/500x200?&bg=39dbac&fc=fff&text=Alice").img-thumbnail
+              //pagination
+              nav(aria-label="Page navigation example")
+                ul.pagination.justify-content-center
+                  li.page-item.disabled
+                    a(href="#" tabindex="-1").page-link Précédent
+                  - for (let j = 1; j < 4; j++)
+                    li.page-item
+                      a(href="#").page-link #{j}
+                  li.page-item
+                    a(href="#").page-link Suivant
