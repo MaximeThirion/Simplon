@@ -9,7 +9,7 @@ $(function(){
   });
   
   $('a').on('mouseleave', function () {
-    $(this).children().remove();
+    $(this).find('div').remove();
   })
 });
 
