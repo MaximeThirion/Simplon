@@ -1,0 +1,34 @@
+ul::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+ul li {
+  float: left;
+  list-style: none; }
+
+ul li a {
+  padding: 10px 20px;
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #CCC; }
+
+ul li.active a, ul li:hover a {
+  background: #DDD;
+  color: #000; }
+
+section article {
+  display: none;
+  border-left: 1px solid #DDD;
+  padding: 20px; }
+
+section article:first-of-type {
+  display: block; }
+
+/*# sourceMappingURL=style.css.map */

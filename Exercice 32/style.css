@@ -1,0 +1,13 @@
+a[data-title] {
+  position: relative;
+}
+a[data-title] div {
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #2F00EE;
+  top: 0;
+  left: 0;
+  width: 200px;
+  font-size: 0.8em;
+}
