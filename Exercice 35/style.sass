@@ -1,0 +1,25 @@
+$size: 200px
+$border: 1px
+$margin: 5px
+
+$case: $size + 2 * $border + 2 * $margin
+
+main
+  width: $case * 4
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+  article
+    position: relative
+    background-color: #63caff
+    border: #{$border} solid black
+    margin: $margin
+    width: $size
+    height: $size
+    overflow: hidden
+    div
+      position: absolute
+      width: 20px
+      height: 20px
+      background-color: white
+      border: 1px solid black
