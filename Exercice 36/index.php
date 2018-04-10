@@ -21,8 +21,7 @@ echo "---index.php---<br><br>"
             echo "<td colspan='100'>Planning</td>";
             echo "</tr>";
             echo "<tr>";
-            echo "<td>Aujourd'hui</td>";
-            echo "<td>$date_du_jour</td>";
+            echo "<td>".$planningmanager->getDate()."</td>";
             foreach ($planningmanager->getAll() as $categorie) {
                 echo "<td>".$categorie->getCategorie()."</td>";
                 break;
