@@ -134,5 +134,15 @@ $(function () {
   };
   setInterval(function () {
     animation8()
-  }, 2000)
+  }, 2000);
+
+  const animation9 = function () {
+
+    for (let i = 0; i < 10; i++) {
+      for (let j = 0; j < 10; j++) {
+
+      }
+    }
+  };
+  animation9()
 });
