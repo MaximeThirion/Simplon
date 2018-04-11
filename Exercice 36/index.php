@@ -42,7 +42,7 @@ echo "---index.php---<br><br>"
             foreach ($planningmanager->getAll() as $planning) {
                 echo "<td>".$planning->getStatut().": ".$planning->getPrenom()."</td>";
             }
-            
+
         ?>
         </tbody>
     </table>
@@ -55,7 +55,6 @@ echo "---index.php---<br><br>"
         echo "<td colspan='100' style='background-color: #ababab'>Planning de la semaine du : ".$planningmanager->getSemaine2()."</td>";
 
         $tableau = [];
-        $tableau_de_nom = [];
 
         foreach ($planningmanager->getSemaine() as $semaine) {
 
@@ -77,11 +76,6 @@ echo "---index.php---<br><br>"
 
                 echo "<td>".$semaine->getStatut().": ".$semaine->getPrenom()."</td>";
             }
-//            elseif (in_array($semaine->getPrenom(), $tableau_de_nom) != $semaine->getPrenom()) {
-//
-//                $tableau_de_nom[] = $semaine->getPrenom();
-//                echo "<td>".$semaine->getPrenom()."</td>";
-//            }
         }
 
         ?>
