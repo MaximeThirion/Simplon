@@ -6,6 +6,7 @@ include ('Manager/ActiviteManager.php');
 include ('Model/Adherent.php');
 include ('Manager/AdherentManager.php');
 include ('Model/Planning.php');
+include ('Model/Planning_2.php');
 include ('Manager/PlanningManager.php');
 
 use Exercice_5\Activite;
@@ -13,6 +14,7 @@ use Exercice_5\ActiviteManager;
 use Exercice_5\Adherent;
 use Exercice_5\AdherentManager;
 use Exercice_5\Planning;
+use Exercice_5\Planning_2;
 use Exercice_5\PlanningManager;
 
 echo "---init.php---<br><br>";
@@ -27,6 +29,7 @@ $activitemanager->setBDD($base_de_donnee);
 $planningmanager = new PlanningManager();
 $planningmanager->setBDD($base_de_donnee);
 $planningmanager->setDate($date_du_jour);
+$planningmanager->setSemaine('2018-04-10');
 
 $adherentmanager = new AdherentManager();
 $adherentmanager->setBDD($base_de_donnee);

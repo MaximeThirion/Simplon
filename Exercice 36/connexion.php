@@ -1,5 +1,7 @@
 <?php
 
+echo "---connexion.php---<br><br>";
+
 try {
     echo "Connexion à la BD 'evaluation' en cours <br><br>";
 
