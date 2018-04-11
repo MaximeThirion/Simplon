@@ -6,6 +6,8 @@ class Planning_2 {
 
     public $date;
     public $categorie;
+    public $heure_de_debut;
+    public $heure_de_fin;
     public $prenom;
     public $statut;
 
@@ -15,6 +17,14 @@ class Planning_2 {
 
     public function getCategorie() {
         return $this->categorie;
+    }
+
+    public function getHeureDeDebut() {
+        return $this->heure_de_debut;
+    }
+
+    public function getHeureDeFin() {
+        return $this->heure_de_fin;
     }
 
     public function getPrenom() {

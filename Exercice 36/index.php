@@ -65,6 +65,8 @@ echo "---index.php---<br><br>"
                 echo "<td>".$semaine->getDate()."</td>";
                 $tableau[] = $semaine->getCategorie();
                 echo "<td>".$semaine->getCategorie()."</td>";
+                echo "<td>".$semaine->getHeureDeDebut()."</td>";
+                echo "<td>".$semaine->getHeureDeFin()."</td>";
                 echo "<td>".$semaine->getStatut().": ".$semaine->getPrenom()."</td>";
             }
             elseif (in_array($semaine->getCategorie(), $tableau) != $semaine->getCategorie()) {
@@ -81,10 +83,5 @@ echo "---index.php---<br><br>"
         ?>
         </tbody>
     </table>
-<?php
-
-
-
-?>
     </body>
 </html>
