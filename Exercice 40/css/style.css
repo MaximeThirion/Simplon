@@ -1,0 +1,229 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+.test {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+main {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 770px;
+  width: 360px;
+  margin: auto;
+  border-radius: 15px;
+  padding-top: 70px;
+  padding-left: 15px;
+  background-color: #515151; }
+
+.ecran {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 641px;
+  width: 330px;
+  background-color: white; }
+
+.ecran_index {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 641px;
+  width: 330px;
+  background-color: #d2d2d2; }
+
+.titre {
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  background-color: white; }
+
+.etat {
+  background-color: #d2d2d2;
+  height: 270px;
+  border-bottom: 1px solid black; }
+  .etat h2 {
+    text-align: center;
+    padding-top: 30px; }
+
+.image_verif {
+  width: 120px;
+  margin-left: 105px; }
+
+.carousel_verif {
+  text-align: center; }
+  .carousel_verif p {
+    margin-top: 15px; }
+
+.code_velo {
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 1px solid black; }
+  .code_velo h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin: 0; }
+  .code_velo h3 {
+    background-color: #d2d2d2;
+    margin: 0;
+    padding: 10px 0 10px 0; }
+
+.code_velo2 {
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black; }
+  .code_velo2 h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin: 0; }
+  .code_velo2 h3 {
+    background-color: #d2d2d2;
+    margin: 0;
+    padding: 10px 0 10px 0; }
+
+.code_velo3 {
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 10px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black; }
+  .code_velo3 h4 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin: 0; }
+  .code_velo3 h3 {
+    background-color: #d2d2d2;
+    margin: 0;
+    padding: 10px 0 10px 0; }
+
+.clavier img {
+  width: 328px; }
+
+article {
+  position: relative; }
+  article div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: 0;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4); }
+    article div i {
+      font-size: 3em;
+      margin: 25px 0 0 25px; }
+
+.rond {
+  left: 110px; }
+  .rond p {
+    text-align: center;
+    width: 150px;
+    margin: 20px 0 0 20px;
+    font-size: 1.5em;
+    color: white;
+    display: none; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+#rond1 {
+  top: 75px; }
+
+#rond2 {
+  top: 225px; }
+
+#rond3 {
+  top: 375px; }
+
+#map {
+  width: 328px; }
+
+#div_map {
+  position: relative; }
+
+button {
+  width: 328px;
+  height: 56px;
+  background-color: red;
+  border-top: 1px solid black;
+  border-left: none;
+  border-right: none;
+  border-bottom: none; }
+  button a {
+    color: white;
+    font-size: 2em; }
+
+.image_velo {
+  background-color: #d2d2d2;
+  height: 200px;
+  width: 328px;
+  position: relative; }
+  .image_velo .i_velo {
+    font-size: 15em;
+    margin: -20px 0 0 15px; }
+
+.point {
+  position: absolute;
+  font-size: 2em;
+  color: red; }
+
+.categorie button {
+  border-radius: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 50px; }
+.categorie p {
+  margin: 0; }
+
+.categorie_select {
+  width: 328px; }
+  .categorie_select p {
+    margin-left: 10px; }
+  .categorie_select input {
+    height: 25px;
+    width: 25px;
+    margin: 0 0 0 -20px; }
+
+.message {
+  width: 268px;
+  height: 120px;
+  margin: 16px auto 0 auto;
+  border-radius: 10px;
+  background-color: #d2d2d2; }
+  .message textarea {
+    width: 268px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px 0 0 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300; }
+
+/*# sourceMappingURL=style.css.map */
